@@ -34,7 +34,7 @@ Your host now has full access to your widget's module, as if the module lived di
 __I'm getting a "fatal: Could not read from remote repository" error message when running `jspm install`.__<br />
 If you're behind a corporate proxy, you may need to create HTTP_PROXY and HTTPS_PROXY environment variables to allow jspm to fetch dependencies from GitHub.
 
-__I'm getting a "GitHub rate limit reached" when running `jspm install`.__<br />
+__I'm getting a "GitHub rate limit reached" error message when running `jspm install`.__<br />
 See http://stackoverflow.com/a/30995041/1063392.  Make sure to give your access token the `public_repo` scope. 
 
 ## Some other notes
