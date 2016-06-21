@@ -70,15 +70,17 @@ module.exports = generators.Base.extend({
         // to be templated, so now overwrite the *non* templated version
         this.fs.copyTpl(this.templatePath('app/assets/WhereToPutAssets.md'), this.destinationPath('app/assets/WhereToPutAssets.md'), this.props);
 
-        // for some reason, the .gitignore isn't being copied as part of the copy process above.
-        // copy it manually here.
-        this.fs.copy(this.templatePath('./.gitignore'), this.destinationPath('./.gitignore'), this.props);
+        // npm makes .gitignores go away, so it was renamed to "gitignore.txt"" to avoid this.
+        // now we need to delete the "gitignore.txt" in the destinationPath and copy over a
+        // new version named ".gitignore"
+        this.fs.delete(this.destinationPath('./gitignore.txt'));
+        this.fs.copy(this.templatePath('./gitignore.txt'), this.destinationPath('./.gitignore'), this.props);
     },
     install: function () {
         var _this = this;
 
         if (!this.options.noinstall) {
-            
+
             // run a npm install
             this.log('Running npm install...');
             this.npmInstall(null, null, function () {
