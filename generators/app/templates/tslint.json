@@ -1,0 +1,49 @@
+{
+  "rules": {
+    "class-name": true,
+    "curly": true,
+    "interface-name": true,
+    "max-line-length": [ false, 200 ],
+    "no-arg": true,
+    "no-construct": true,
+    "no-duplicate-key": true,
+    "no-duplicate-variable": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-eval": true,
+    "no-require-imports": true,
+    "no-switch-case-fall-through": true,
+    "no-unreachable": true,
+    "no-unused-expression": true,
+    "no-var-requires": true,
+    "one-line": [
+      true,
+      "check-open-brace"
+    ],
+    "radix": true,
+    "triple-equals": true,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type"
+    ],
+
+    "no-control-regex": true,
+    "no-duplicate-case": true,
+    "no-empty-character-class": true,
+    "no-inner-declarations": [
+      true,
+      "functions"
+    ],
+    "no-invalid-regexp": true,
+    "no-irregular-whitespace": true,
+    "no-regex-spaces": true,
+    "no-sparse-arrays": true,
+    "use-isnan": true,
+    "valid-typeof": true
+  }
+}

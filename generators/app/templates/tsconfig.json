@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "module": "system",
+        "rootDir": "./app",
+        "sourceMap": true,
+        "target": "es5",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "outDir": "./dev-build"
+    }
+}

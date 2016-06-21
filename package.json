@@ -1,0 +1,26 @@
+{
+  "name": "generator-angular-widget",
+  "version": "1.0.0",
+  "description": "Generates everything necessary to begin work on a new shareable Angular module.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nfriend/generator-angular-widget"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Nathan Friend",
+  "files": [
+    "generators/app"
+  ],
+  "dependencies": {
+    "camelcase": "^3.0.0",
+    "decamelize": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "uppercamelcase": "^1.1.0",
+    "yeoman-generator": "^0.23.3"
+  }
+}

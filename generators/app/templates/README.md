@@ -1,0 +1,2 @@
+# <%= widgetName %>
+The <%= widgetTitle %> Angular widget.  For more information on building, running, and integrating widgets into host applications, see https://github.com/nfriend/generator-angular-widget.

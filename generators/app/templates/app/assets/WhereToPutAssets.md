@@ -1,0 +1,4 @@
+# Important note about about assets
+Please do __not__ put assets at the root of the `assets` directory.  Instead, place assets in `assets/<%= widgetName %>`.  This is to avoid conflicts with other widgets when the widget is eventually integrated with the host application.  During the host application's build process, each widget's `assets` directory is copied into the host's `assets` directory to preserve the relative paths to images and other assets.  If images and other assets are not properly namespaced in their own directory, two widgets could place an identically-named asset at the root of their `assets` directory; one of the widgets would have their asset overwritten by the other widget's asset.
+
+To help prevent this behavior, assets placed at the root of the `assets` directory will not be copied as part of the build.  
